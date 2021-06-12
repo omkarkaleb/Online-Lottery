@@ -50,7 +50,7 @@ def login(request):
             auth.login(request, user)
             return redirect('index')
         else:
-            messages.info(request, 'Wrong Credentials YOU IDIOT!!!')
+            messages.info(request, 'Wrong Credentials!!!')
             return redirect('login')
     else:
         return render(request, 'login.html')   
